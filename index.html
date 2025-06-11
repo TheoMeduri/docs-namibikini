@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação do Painel Nami Bikini</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header" onclick="toggleSidebar()">
+                <h2><i class="ri-information-line"></i> Docs Nami Bikini</h2>
+                <i class="ri-arrow-down-s-line" id="sidebar-toggle-icon"></i>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#introducao" class="active"><i class="ri-home-line"></i> <span class="pt-br">Introdução</span><span class="en" style="display:none">Introduction</span></a></li>
+                    <li><a href="#acesso"><i class="ri-login-box-line"></i> <span class="pt-br">Acesso ao Painel</span><span class="en" style="display:none">Panel Access</span></a></li>
+                    <li><a href="#products"><i class="ri-store-3-line"></i> <span class="pt-br">Gerenciar Produtos</span><span class="en" style="display:none">Manage Products</span></a></li>
+                    <li><a href="#transactions"><i class="ri-money-dollar-circle-line"></i> <span class="pt-br">Transações</span><span class="en" style="display:none">Transactions</span></a></li>
+                    <li><a href="#orders"><i class="ri-archive-line"></i> <span class="pt-br">Pedidos</span><span class="en" style="display:none">Orders</span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <div class="language-buttons">
+                    <div class="language-toggle-track">
+                        <button class="language-btn active" onclick="changeLanguage('pt-br')">PT-BR</button>
+                        <button class="language-btn" onclick="changeLanguage('en')">EN</button>
+                        <span class="language-toggle-slider"></span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="introducao" class="section">
+                <h1 class="pt-br">Documentação do Painel Administrativo Nami Bikini</h1>
+                <h1 class="en" style="display:none">Nami Bikini Admin Panel Documentation</h1>
+                
+                <p class="pt-br">Esta documentação explica como utilizar todas as funcionalidades do painel administrativo da Nami Bikini, sua loja virtual de biquínis e moda praia.</p>
+                <p class="en" style="display:none">This documentation explains how to use all features of the Nami Bikini admin panel, your online store for swimwear and beach fashion.</p>
+                
+                <p class="pt-br">Lembre-se: <code>Frases grifadas com azul, indicam links externos ou importância</code>, <code class="success">frases grifadas de aqua, indicam positividade</code>, <code class="warn">frases grifadas em amarelo, indicam neutralidade</code> e <code class="danger">frases grifadas em vermelho, indicam erros ou negatividade</code></p>
+                <p class="en" style="display:none">Remember: <code>Phrases highlighted in blue indicate external links or importance</code>, <code class="success">phrases highlighted in aqua indicate positivity</code>, <code class="warn">phrases highlighted in yellow indicate neutrality</code> and <code class="danger">phrases highlighted in red indicate errors or negativity</code></p>
+
+                <div class="note">
+                    <p class="pt-br"><strong>Versão:</strong> NB 1.0 | Criado em 11/06/2025</p>
+                    <p class="en" style="display:none"><strong>Version:</strong> NB 1.0 | Created on 06/11/2025</p>
+                </div>
+            </section>
+            
+            <section id="acesso" class="section">
+                <h2 class="pt-br">Acesso ao Painel Administrativo</h2>
+                <h2 class="en" style="display:none">Admin Panel Access</h2>
+                
+                <h3 class="pt-br">Primeiro Acesso</h3>
+                <h3 class="en" style="display:none">First Access</h3>
+                
+                <p class="pt-br">Para acessar o painel administrativo pela primeira vez:</p>
+                <p class="en" style="display:none">To access the admin panel for the first time:</p>
+                
+                <ol>
+                    <li class="pt-br">Acesse <code onclick="goTo('https://admin.namibikini.com.br/panel')">https://admin.namibikini.com.br/panel</code></li>
+                    <li class="en" style="display:none">Go to <code onclick="goTo('https://admin.namibikini.com.br/panel')">https://admin.namibikini.com.br/panel</code></li>
+                    <li class="pt-br">Utilize as credenciais enviadas para seu e-mail</li>
+                    <li class="en" style="display:none">Use the credentials sent to your email</li>
+                    <li class="pt-br">Altere sua senha no primeiro acesso</li>
+                    <li class="en" style="display:none">Change your password on first login</li>
+                </ol>
+                
+                <div class="warning">
+                    <p class="pt-br"><strong>Segurança:</strong> Nunca compartilhe suas credenciais de acesso. Caso isso já tenha acontecido, mude suas credenciais o mais rápido possível.</p>
+                    <p class="en" style="display:none"><strong>Security:</strong> Never share your access credentials. If this has already happened, change your credentials as soon as possible.</p>
+                </div>
+            </section>
+
+            <section id="products" class="section">
+                <h2 class="pt-br">Gerenciar Produtos</h2>
+                <h2 class="en" style="display:none">Manage Products</h2>
+
+                <h3 class="pt-br">Como gerenciar meus produtos?</h3>
+                <h3 class="en" style="display:none">How do I manage my products?</h3>
+                
+                <p class="pt-br">Primeiro acesse o painel de produtos em: <code onclick="goTo('https://admin.namibikini.com.br/panel/products')">https://admin.namibikini.com.br/panel/products</code>, nesta página você poderá: <code class="success">Adicionar</code>, <code class="danger">Remover</code> e <code class="warn">Editar</code> produtos. Lembre-se,  o tempo de processamento pode ser instantâneo ou pode demorar mais do que previsto.</p>
+                <p class="en" style="display:none">First access the product panel at: <code onclick="goTo('https://admin.namibikini.com.br/panel/products')">https://admin.namibikini.com.br/panel/products</code>, on this page you can: <code class="success">Add</code>, <code class="danger">Remove</code> and <code class="warn">Edit</code> products. Remember, processing time may be instantaneous or may take longer than expected.</p>
+                
+                <h3 class="pt-br">Adicionar Produtos</h3>
+                <p class="pt-br">Siga estes passos para criar um produto e adiciona-ló no site.</p>
+                <ol>
+                    <li class="pt-br">Mude o toggle para <code>Adicionar Produto</code>.</li>
+                    <li class="pt-br">Preencha as informações do produto, como: peso, estoque, cores, etc..</li>
+                    <li class="pt-br">Adicione ou crie uma nova coleção para ele na parte <code>Coleções</code>.</li>
+                    <li class="pt-br">Por último, clique em <code>Salvar Produto</code>.</li>
+                </ol>
+                <p class="pt-br">Após isso, o sistema levará cerca de <code>2 minutos</code> para processar o produto e adiciona-ló ao catálogo do site.</p>
+
+                <h3 class="pt-br">Remover Produto</h3>
+                <p class="pt-br">Siga estes passos para remover um produto do catálogo do site.</p>
+                <ol>
+                    <li class="pt-br">Mude o toggle para <code class="danger">Remover Produto</code>.</li>
+                    <li class="pt-br">Na lista, selecione o produto que deseja remover.</li>
+                    <li class="pt-br">Confirme a exclusão clicando em <code class="danger">Sim, remover produto</code>.</li>
+                </ol>
+                <p class="pt-br">Após isso, o site levará cerca de <code>5 minutos</code> para excluir o item do catálogo. Caso você queira cancelar a exclusão, você tem <code>5 minutos</code> para ir em <code onclick="goTo('https://admin.namibikini.com.br/panel/products#trash')">https://admin.namibikini.com.br/panel/products#trash</code> e clicar em <code>Restaurar Produto</code> no produto que deseja restaurar ao catálogo.</p>
+
+                <h3 class="pt-br">Editar Produto</h3>
+                <p class="pt-br">Siga estes passos para editar um produto que já está no catálogo.</p>
+                <ol>
+                    <li class="pt-br">Mude o toggle para <code>Editar Produto</code>.</li>
+                    <li class="pt-br">Selecione, na lista, o produto que deseja editar (Máx. 1 produto, por vez).</li>
+                    <li class="pt-br">Edite as informações e clique em <code>Salvar Alterações</code>.</li>
+                </ol>
+                <p class="pt-br">Após isso, o site levará cerca de <code>3 minutos</code> para processar as alterações do produto.</p>
+                
+                <h3 class="en" style="display:none">Add Products</h3>
+                <p class="en" style="display:none">Follow these steps to create a product and add it to the website.</p>
+                <ol>
+                    <li class="en" style="display:none">Switch the toggle to <code>Add Product</code>.</li>
+                    <li class="en" style="display:none">Fill in the product information, such as: weight, stock, colors, etc.</li>
+                    <li class="en" style="display:none">Add or create a new collection for it in the <code>Collections</code> section.</li>
+                    <li class="en" style="display:none">Finally, click on <code>Save Product</code>.</li>
+                </ol>
+                <p class="en" style="display:none">After this, the system will take about <code>2 minutes</code> to process the product and add it to the website catalog.</p>
+
+                <h3 class="en" style="display:none">Remove Product</h3>
+                <p class="en" style="display:none">Follow these steps to remove a product from the website catalog.</p>
+                <ol>
+                    <li class="en" style="display:none">Switch the toggle to <code class="danger">Remove Product</code>.</li>
+                    <li class="en" style="display:none">From the list, select the product you want to remove.</li>
+                    <li class="en" style="display:none">Confirm deletion by clicking <code class="danger">Yes, remove product</code>.</li>
+                </ol>
+                <p class="en" style="display:none">After this, the website will take about <code>5 minutes</code> to remove the item from the catalog. If you want to cancel the deletion, you have <code>5 minutes</code> to go to <code onclick="goTo('https://admin.namibikini.com.br/panel/products#trash')">https://admin.namibikini.com.br/panel/products#trash</code> and click <code>Restore Product</code> on the product you want to return to the catalog.</p>
+
+                <h3 class="en" style="display:none">Edit Product</h3>
+                <p class="en" style="display:none">Follow these steps to edit a product that is already in the catalog.</p>
+                <ol>
+                    <li class="en" style="display:none">Switch the toggle to <code>Edit Product</code>.</li>
+                    <li class="en" style="display:none">Select the product you want to edit from the list (Max. 1 product at a time).</li>
+                    <li class="en" style="display:none">Edit the information and click <code>Save Changes</code>.</li>
+                </ol>
+                <p class="en" style="display:none">After this, the website will take about <code>3 minutes</code> to process the product changes.</p>
+            </section>
+
+            <section id="transactions" class="section">
+                <h2 class="pt-br">Transações</h2>
+
+                <h3 class="pt-br">Posso ver todas as transações realizadas?</h3>
+                <p class="pt-br">Sim, o site permite que você veja todas as transações que ocorreram em até <code>20 dias atrás</code>, após essa data as transações são deletadas para economizar memória do servidor.</p>
+
+                <h3 class="pt-br">Onde encontrar?</h3>
+                <p class="pt-br">Acesse o link <code onclick="goTo('https://admin.namibikini.com.br/panel/transactions')">https://admin.namibikini.com.br/panel/transactions</code> e filtre as transações por: <code class="success">Entrada</code>, <code class="warn">Retorno</code> ou <code class="danger">Saída</code>.</p>
+                
+                <h2 class="en" style="display:none">Transactions</h2>
+
+                <h3 class="en" style="display:none">Can I see all completed transactions?</h3>
+                <p class="en" style="display:none">Yes, the website allows you to view all transactions that occurred up to <code>20 days ago</code>. After this period, transactions are deleted to save server memory.</p>
+
+                <h3 class="en" style="display:none">Where to find them?</h3>
+                <p class="en" style="display:none">Access the link <code onclick="goTo('https://admin.namibikini.com.br/panel/transactions')">https://admin.namibikini.com.br/panel/transactions</code> and filter transactions by: <code class="success">Income</code>, <code class="warn">Refund</code> or <code class="danger">Expense</code>.</p>
+            </section>
+
+            <section id="orders" class="section">
+                <h2 class="pt-br">Pedidos</h2>
+
+                <h3 class="pt-br">Como posso visualizar e gerenciar meus pedidos?</h3>
+                <p class="pt-br">Acesse <code onclick="goTo('https://admin.namibikini.com.br/panel/orders')">https://admin.namibikini.com.br/panel/orders</code>, filtre se necessário os pedidos por: <code class="success">Entregues</code>, <code class="warn">Enviados</code>, <code>Pendentes</code> e <code class="danger">Cancelados</code>.</p>
+                <p class="pt-br">Nesta página você poderá falar com o(a) comprador(a), mudar código de rastreio, gerenciar status e etc..</p>
+                <h2 class="en" style="display:none">Orders</h2>
+
+                <h3 class="en" style="display:none">How can I view and manage my orders?</h3>
+                <p class="en" style="display:none">Access <code onclick="goTo('https://admin.namibikini.com.br/panel/orders')">https://admin.namibikini.com.br/panel/orders</code>, filter orders if needed by: <code class="success">Delivered</code>, <code class="warn">Shipped</code>, <code>Pending</code> and <code class="danger">Canceled</code>.</p>
+                <p class="en" style="display:none">On this page you can communicate with the buyer, change tracking number, manage status and more.</p>
+            </section>
+
+            <section class="section">
+                <p class="pt-br">Mais atualizações em breve.. <code>15/06/2025</code></p>
+                <p class="en" style="display:none">More updates coming soon.. <code>06/15/2025</code></p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </section>
+        </main>
+        
+    </div>
+
+    <script>
+// Toggle sidebar on mobile with smooth sliding animation
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const icon = document.getElementById('sidebar-toggle-icon');
+    
+    // Adiciona/remove a classe 'active' para iniciar a transição
+    sidebar.classList.toggle('active');
+    
+    // Atualiza o ícone
+    if (sidebar.classList.contains('active')) {
+        icon.classList.remove('ri-arrow-down-s-line');
+        icon.classList.add('ri-arrow-up-s-line');
+    } else {
+        icon.classList.remove('ri-arrow-up-s-line');
+        icon.classList.add('ri-arrow-down-s-line');
+    }
+}
+
+function changeLanguage(lang) {
+    // Remove active class from all buttons
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Add active class to clicked button
+    const activeBtn = lang === 'en' 
+        ? document.querySelector('.language-btn:nth-child(2)')
+        : document.querySelector('.language-btn:nth-child(1)');
+    activeBtn.classList.add('active');
+    
+    // Show/hide language elements
+    document.querySelectorAll(`.${lang}`).forEach(el => {
+        el.style.display = '';
+    });
+    
+    const otherLang = lang === 'en' ? 'pt-br' : 'en';
+    document.querySelectorAll(`.${otherLang}`).forEach(el => {
+        el.style.display = 'none';
+    });
+}
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 20,
+                behavior: 'smooth'
+            });
+            
+            // Close sidebar on mobile after clicking a link
+            if (window.innerWidth <= 1024) {
+                toggleSidebar();
+            }
+        }
+    });
+});
+
+// Highlight active section in sidebar
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('.section');
+    const scrollPosition = window.scrollY + 100;
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            document.querySelector(`.sidebar-nav a[href="#${sectionId}"]`).classList.add('active');
+        } else {
+            document.querySelector(`.sidebar-nav a[href="#${sectionId}"]`).classList.remove('active');
+        }
+    });
+});
+
+// Set Portuguese as default language
+document.addEventListener('DOMContentLoaded', function() {
+    changeLanguage('pt-br');
+});
+        
+
+function goTo(url) {
+    window.location.href = url;
+}
+    </script>
+</body>
+</html>
